@@ -9,12 +9,17 @@ Clone the repository: git clone (https://github.com/MiguelWO/social-media.git)
 
 Install dependencies: npm install
 
-Create a .env file in the root directory and set the following environment variables:
+### Create a .env file in the root directory and set the following environment variables:
 PORT: the port number the server will run on (default is 3000)
+
 MONGODB_URI: the URI for your MongoDB database
+
 JWT_SECRET: a secret string used for signing JSON Web Tokens
+
 Start the server: npm start
+
 API Endpoints
+
 The following endpoints are available:
 
 ### Auth Routes
