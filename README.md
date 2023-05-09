@@ -6,6 +6,7 @@ Node.js (v12 or higher)
 MongoDB
 Getting Started
 Clone the repository: git clone (https://github.com/MiguelWO/social-media.git)
+
 Install dependencies: npm install
 
 Create a .env file in the root directory and set the following environment variables:
