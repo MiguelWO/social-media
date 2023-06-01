@@ -34,6 +34,7 @@ require('dotenv').config();
       });
 
       res.cookie('jwt', token, {httpOnly: true});
+      res.json({message: 'User created successfully', user: savedUser, token: token});
 
       res.status(201).json({message: 'User created successfully', user: savedUser});
     } catch (err) {
