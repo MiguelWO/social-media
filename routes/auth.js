@@ -33,12 +33,12 @@ require('dotenv').config();
         expiresIn: 3600,
       });
 
-      res.cookie('jwt', token, {httpOnly: true});
-      res.json({message: 'User created successfully', user: savedUser, token: token});
+      // res.cookie('jwt', token, {httpOnly: true});
+      // res.json({message: 'User created successfully', user: savedUser, token: token});
 
-      res.status(201).json({message: 'User created successfully', user: savedUser});
+      res.status(201).json({message: 'User created successfully', user: savedUser, token: token});
     } catch (err) {
-      res.status(500).json({ error: err.message });
+      // res.status(500).json({ error: err.message });
     }
   });
 
@@ -67,7 +67,7 @@ require('dotenv').config();
         expiresIn: 3600,
       });
 
-      res.cookie('jwt', token, {httpOnly: true});
+      // res.cookie('jwt', token, {httpOnly: true});
       res.json({message: 'User logged in successfully', user: user, token: token});
 
     } catch (err) {
